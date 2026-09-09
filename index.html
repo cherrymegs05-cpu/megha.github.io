@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio!</title>
+    <style>
+        /* Modern Minimalist CSS styling */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --accent-color: #2563eb;
+            --secondary-bg: #f8fafc;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem 2rem 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: #64748b;
+            margin-top: 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem 4rem 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 600px) {
+            .project-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .project-card {
+            background-color: var(--secondary-bg);
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        .contact-links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-right: 1.5rem;
+            font-weight: 500;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Replace with your name and role -->
+        <h1>Hi, I'm Megha!</h1>
+        <p class="subtitle">Aspiring Developer | Tech Enthusiast </p>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I’m a curious Computer Science student who loves turning ideas into creative, practical projects. I’m exploring web development, AI, and problem-solving while constantly learning and experimenting with new technologies. I may still be figuring things out, but I’m passionate about growing, building, and creating things that make a difference.
+</p>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <h3>Easy Leave- Leave Application System</h3>
+                    <p>A digital </p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <h3>Project Title Two</h3>
+                    <p>A short description of what this project does, the technical problems it solves, and the tools you used to build it.</p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>I am currently looking for new opportunities! Feel free to connect with me:</p>
+            <div class="contact-links">
+                <!-- Replace the '#' characters with your real links -->
+                <a href="cherrymegs05@gmail.com">Email Me</a>
+                
+                <a href="https://github.com/cherrymegs05-cpu" target="_blank">GitHub Profile</a>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
 
